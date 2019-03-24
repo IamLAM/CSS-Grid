@@ -6,9 +6,9 @@
   
   .item5 {
     background: PaleGreen;
-
+    grid-area:3/1/4/4;
     
-    grid-area:header;
+    /* grid-area: horizontal line to start at / vertical line to start at / horizontal line to end at / vertical line to end at; */
   }
   
   .container {
@@ -20,10 +20,6 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 10px;
-    grid-template-areas: 
-      "header header header"
-      "advert content content"
-      "footer footer footer";
   }
 </style>
   
