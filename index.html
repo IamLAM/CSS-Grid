@@ -1,37 +1,36 @@
 <style>
-  .d1{background:LightSkyBlue;}
-  .d2{background:LightSalmon;
+  .item1{background:LightSkyBlue;}
+  .item2{background:LightSalmon;}
+  .item3{background:PaleTurquoise;}
+  .item4{background:LightPink;}
   
-   justify-self:center; /* start center end*/
-  }
-  .d3{background:PaleTurquoise;}
-  .d4{background:LightPink;}
-  .d5{background:PaleGreen;
-   grid-column:1/3;
-    grid-row:2/4; 
+  .item5 {
+    background: PaleGreen;
+
+    
+    grid-area:header;
   }
   
   .container {
     font-size: 40px;
+    min-height: 300px;
     width: 100%;
     background: LightGray;
-    display:grid;
-    grid-template-columns: 1fr 100px 2fr; /*fracciones fr auto, % o px  */
-      grid-template-rows:50px 50px; /*Dos filas añadidas*/
-          grid-column-gap:20px; /* Creamos espacio entre las columnas*/
-            grid-row-gap:5px;
-
-            /* grid-gap:10px 20px  aplicamos al mismo tiempo a col y row */
-  
-  
-      justify-items:center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas: 
+      "header header header"
+      "advert content content"
+      "footer footer footer";
   }
 </style>
   
 <div class="container">
-  <div class="d1">1</div>
-  <div class="d2">2</div>
-  <div class="d3">3</div>
-  <div class="d4">4</div>
-  <div class="d5">5</div>
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>
+  <div class="item4">4</div>
+  <div class="item5">5</div>
 </div>
